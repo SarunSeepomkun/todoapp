@@ -1,0 +1,84 @@
+.container{
+    max-width: 380px;
+    margin: 0 auto;
+    border: lightgray 1px solid;
+    border-radius: 15px 15px 0 0;
+}
+
+.header{
+    max-width: 380px;
+    height:200px;
+    position: relative;
+    background-color: lightslategray;
+    border-radius: 15px 15px 0 0;
+}
+
+.content{
+    max-width: 380px;
+    max-height: 360px;
+    height: 350px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.item{
+    max-width: 380px;
+    height: 45px;
+    min-height: 45px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+} 
+
+.item p.text{
+    font-size: 20px;
+    left: 50px;
+    top: 10px;
+    background-color: #fff;
+    max-width: 285px;
+}
+
+.item .btnDelete{
+    outline: none;
+    font-size: 20px;
+    background-color: #f44336;
+    color: #fff;
+    width: 50px;
+    height: 30px;
+    border-radius: 180px;
+    border-style: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Create div */
+.add-to-do{
+    display: flex;
+    justify-content: space-between;
+    max-width: 380px;
+    max-height: 50px;
+    height: 50px;
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.add-to-do .btnSubmit{
+    outline: none;
+    background-color: #4CAF50;
+    border-radius: 180px;
+    color: #fff;
+    width: 50px;
+    height: 30px;
+    font-size: 25px;
+    border-style: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-do input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
