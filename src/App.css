@@ -6,17 +6,23 @@
 }
 
 .header{
+    font-family: 'Grandstander', cursive;
     max-width: 380px;
-    height:200px;
-    position: relative;
-    background-color: lightslategray;
+    height:100px;
+    background-color: rgba(224,79,95,1);
     border-radius: 15px 15px 0 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: hsla(0, 100%, 99%, 0.918);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .content{
     max-width: 380px;
-    max-height: 360px;
-    height: 350px;
+    max-height: 712px;
+    height: 100%;
     background-color: #fff;
     overflow-y: auto;
 }
@@ -30,6 +36,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    align-items: center;
 } 
 
 .item p.text{
@@ -42,11 +49,11 @@
 
 .item .btnDelete{
     outline: none;
-    font-size: 20px;
+    font-size: 25px;
     background-color: #f44336;
     color: #fff;
-    width: 50px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 180px;
     border-style: none;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -56,12 +63,16 @@
 .add-to-do{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
     max-width: 380px;
     max-height: 50px;
-    height: 50px;
-    background-color: #fff;
     padding: 10px;
-    border-top: 1px solid rgba(0,0,0,0.1);
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    bottom: 0;
+    position: fixed;
 }
 
 .add-to-do .btnSubmit{
@@ -69,16 +80,18 @@
     background-color: #4CAF50;
     border-radius: 180px;
     color: #fff;
-    width: 50px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     font-size: 25px;
     border-style: none;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .add-to-do input {
+    padding-left: 5px;
     background-color: transparent;
     border: none;
     outline: none;
     font-size: 20px;
+
 }

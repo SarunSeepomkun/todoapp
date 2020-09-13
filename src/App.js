@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import db from "./database/firebase";
 import firebase from "firebase";
+import checklistLogo from './images/checklist.png';
 
 function App() {
   const [todoList, setTodoList] = useState([]);
@@ -34,43 +35,47 @@ function App() {
 
   return (
     <div className="container">
-      <div className="header"></div>
-     Todolist App
-        <div className="content">
+      <div className="header"><img alt="checklist" src={checklistLogo} />Todolist</div>
 
-          <ul id="list">
-            {todoList
-              ? todoList.map((data, index) => (
-                  <li id={"li__" + index} className="item">
-                    <span className="text">{data.todo}</span>
-                    <button
-                      id={"btDel__" + index}
-                      className="btnDelete"
-                      onClick={deleteTodo}
-                      value={data.id}
-                    >
-                      -
-                    </button>
-                  </li>
-                ))
-              : ""}
-          </ul>
-        </div>
-         <form>
+      <div className="content">
+        <ul id="list">
+          {todoList
+            ? todoList.map((data, index) => (
+                <li id={"li__" + index} className="item">
+                  <span className="text">{data.todo}</span>
+                  <button
+                    id={"btDel__" + index}
+                    className="btnDelete"
+                    onClick={deleteTodo}
+                    value={data.id}
+                  >
+                    -
+                  </button>
+                </li>
+              ))
+            : ""}
+        </ul>
+      </div>
+      <form>
         <div className="add-to-do">
-            <input
+          <input
             placeholder="add a todo"
-              className="textbox"
-              type="text"
-              value={input}
-              onChange={(e) => {
-                setInput(e.target.value);
-              }}
-            />
-            <button className="btnSubmit" type="submit" onClick={addTodo} disabled={!input}>
-              +
-            </button>
-          </div>
+            className="textbox"
+            type="text"
+            value={input}
+            onChange={(e) => {
+              setInput(e.target.value);
+            }}
+          />
+          <button
+            className="btnSubmit"
+            type="submit"
+            onClick={addTodo}
+            disabled={!input}
+          >
+            +
+          </button>
+        </div>
       </form>
     </div>
   );
