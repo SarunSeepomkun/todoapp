@@ -1,98 +1,94 @@
-.container{
-    max-width: 380px;
-    margin: 0 auto;
-    border: lightgray 1px solid;
-    border-radius: 15px 15px 0 0;
-    position: relative;
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  border: lightgray 1px solid;
 }
 
-.header{
-    font-family: 'Grandstander', cursive;
-    max-width: 380px;
-    height:100px;
-    background-color: rgba(224,79,95,1);
-    border-radius: 15px 15px 0 0;
-    font-size: 32px;
-    font-weight: 600;
-    color: hsla(0, 100%, 99%, 0.918);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.header {
+  font-family: "Grandstander", cursive;
+  max-width: 1024px;
+  height: 80px;
+  background-color: rgb(224, 79, 95);
+  font-size: 32px;
+  font-weight: 600;
+  color: hsla(0, 100%, 99%, 0.918);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: sticky;
+  top: 0;
 }
 
-.content{
-    max-width: 380px;
-    max-height: 712px;
-    height: 100%;
-    background-color: #fff;
-    overflow-y: auto;
+.content {
+  max-width: 1024px;
+  max-height: calc(100vh - 130px);
+  background-color: #fff;
+  overflow-y: auto;
+  /* margin-bottom: -50px; */
 }
 
-.item{
-    max-width: 380px;
-    height: 45px;
-    min-height: 45px;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    align-items: center;
-} 
-
-.item p.text{
-    font-size: 20px;
-    left: 50px;
-    top: 10px;
-    background-color: #fff;
-    max-width: 285px;
+.item {
+  max-width: 1024px;
+  height: 45px;
+  min-height: 45px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
 }
 
-.item .btnDelete{
-    outline: none;
-    font-size: 25px;
-    background-color: #f44336;
-    color: #fff;
-    width: 35px;
-    height: 35px;
-    border-radius: 180px;
-    border-style: none;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+.item p.text {
+  font-size: 20px;
+  left: 50px;
+  top: 10px;
+  background-color: #fff;
+  max-width: 1024px;
 }
 
-/* Create div */
-.add-to-do{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    width: 100%;
-    max-width: 380px;
-    max-height: 50px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,0.1);
-    bottom: 0;
-    position: fixed;
+.item .btnDelete {
+  outline: none;
+  font-size: 25px;
+  background-color: #f44336;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 180px;
+  border-style: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.add-to-do .btnSubmit{
-    outline: none;
-    background-color: #4CAF50;
-    border-radius: 180px;
-    color: #fff;
-    width: 35px;
-    height: 35px;
-    font-size: 25px;
-    border-style: none;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+.add-to-do {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  max-width: 1024px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  position: fixed;
+}
+
+.add-to-do .btnSubmit {
+  outline: none;
+  background-color: #4caf50;
+  border-radius: 180px;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  border-style: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .add-to-do input {
-    padding-left: 5px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 20px;
-
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  width: calc(95vw - 50px);
 }
