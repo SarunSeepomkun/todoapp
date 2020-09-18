@@ -1,4 +1,7 @@
-Create todoapp
--reactjs
--firebase
+Create todoapp using
+-html
 -css
+-javascript
+-reactjs
+-axios
+-firebase
